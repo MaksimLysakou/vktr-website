@@ -32,20 +32,6 @@ import {
 export default function Home() {
   return (
     <div className="flex flex-col w-full items-center fancy-overlay">
-      <LandingSocialProofBand invert={false} className="hidden md:flex">
-        <LandingSocialProofBandItem>
-          Fast, reliable, and secure
-        </LandingSocialProofBandItem>
-
-        <LandingSocialProofBandItem>
-          Easy to use, easy to love
-        </LandingSocialProofBandItem>
-
-        <LandingSocialProofBandItem graphic="rating">
-          99% customer satisfaction
-        </LandingSocialProofBandItem>
-      </LandingSocialProofBand>
-
       <Header className="mb-0 lg:mb-0" />
 
       <LandingPrimaryImageCtaSection
@@ -54,22 +40,16 @@ export default function Home() {
         imageSrc="/static/images/product-sample.webp"
         withBackground
         withBackgroundGlow
-        leadingComponent={<LandingProductHuntAward />}
       >
         <Button size="xl" asChild>
           <a href="/contact-us">Contact us</a>
         </Button>
 
-        <LandingDiscount
-          discountValueText="30% off"
-          discountDescriptionText="for the first 10 customers (2 left)"
-        />
-
         <LandingSocialProof
           className="w-full mt-12"
           showRating
-          numberOfUsers={99}
-          suffixText="happy users"
+          numberOfUsers={24}
+          suffixText="happy clients"
           avatarItems={[
             {
               imageSrc: 'https://picsum.photos/id/64/100/100',
@@ -89,6 +69,7 @@ export default function Home() {
 
       <LandingProductFeature
         title="Customizable Solutions"
+        imageShadow="none"
         descriptionComponent={
           <>
             <LandingProductFeatureKeyPoints
@@ -120,8 +101,8 @@ export default function Home() {
             </p>
           </>
         }
-        imageSrc="/static/images/backdrop-19.webp"
-        imageAlt="Screenshot of the product"
+        imageSrc="/static/images/7416545_4782.svg"
+        imageAlt="A digital illustration featuring a web browser"
         imagePosition="left"
         imagePerspective="none"
       />
