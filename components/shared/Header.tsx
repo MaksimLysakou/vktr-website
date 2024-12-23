@@ -22,9 +22,17 @@ const Header = ({ className }: { className?: string }) => {
             <Image
               src="/static/images/logo.png"
               alt="vktr.tech logo"
-              height={67}
-              width={67}
-              className="group-hover:animate-wiggle "
+              height={32}
+              width={32}
+              className="group-hover:animate-wiggle block dark:hidden"
+            />
+
+            <Image
+              src="/static/images/logo-light.png"
+              alt="vktr.tech logo"
+              height={32}
+              width={32}
+              className="group-hover:animate-wiggle hidden dark:block"
             />
 
             <div className="hidden text-2xl font-semibold sm:flex h-full">
